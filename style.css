@@ -1,0 +1,222 @@
+
+.service-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+}
+
+.service-item a {
+  position: absolute;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor */
+}
+
+
+
+ /* Estilos CSS para el chatbot */
+ #chat-container {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#chat-messages {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+#chat-input {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  padding: 5px;
+}
+#chat-submit {
+  width: 100%;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.container {
+  text-align: center; /* Centra el botón horizontalmente */
+  margin-top: 50px; /* Espacio superior */
+}
+
+.btn {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: rgb(4, 24, 243); /* Color del texto */
+  padding: 10px 20px; /* Espacio interno del botón */
+  font-size: 16px; /* Tamaño del texto */
+  border: none; /* Quita el borde */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.btn:hover {
+  background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+
+form input[type="button"] {
+  background-color:rgb(109, 177, 225); /* Color de fondo para el botón de enviar */
+  color: white; /* Color del texto del botón de enviar */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima del botón de enviar */
+  border: none; /* Eliminar el borde del botón de enviar */
+  border-radius: 5px; /* Añadir bordes redondeados al botón de enviar */
+  padding: 10px 20px; /* Añadir relleno al botón de enviar */
+  font-size: 16px; /* Ajustar el tamaño del texto del botón de enviar */
+  transition: background-color 0.3s; /* Agregar transición para suavizar el cambio de color de fondo */
+}
+
+form input[type="button"]:hover {
+  background-color:rgb(109, 177, 225); /* Cambiar el color de fondo al pasar el cursor sobre el botón de enviar */
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-button input[type="button"] {
+  background-color:#007bff; /* Color de fondo para el botón de enviar */
+  color: white; /* Color del texto del botón de enviar */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima del botón de enviar */
+  border: none; /* Eliminar el borde del botón de enviar */
+  border-radius: 5px; /* Añadir bordes redondeados al botón de enviar */
+  padding: 10px 20px; /* Añadir relleno al botón de enviar */
+  font-size: 16px; /* Ajustar el tamaño del texto del botón de enviar */
+  transition: background-color 0.3s; /* Agregar transición para suavizar el cambio de color de fondo */
+}
+
+.centered-button input[type="button"]:hover {
+  background-color: rgb(109, 177, 225); /* Cambiar el color de fondo al pasar el cursor sobre el botón de enviar */
+}
+
+
+
+
+
+/********** Template CSS ************/
+h1,
+h2,
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+
+
+.carousel-indicators li {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px 10px 5px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  transition: 0.5s;
+}
+
+.carousel-indicators .active {
+  width: 50px;
+  background: #ffffff;
+}
+
+
+
+.service-item img {
+  position: relative;
+  margin-top: 40px;
+  transition: 0.5s;
+}
+
+.service-item .service-text {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 86px);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(33, 30, 28, 0.5);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.service-item:hover img {
+  margin-top: 0px;
+}
+
+.service-item:hover .service-text {
+  height: calc(100% + 40px);
+}
+
+
+.footer p,
+.footer a,
+.footer i {
+  color: #cccccc !important;
+}
+
+.footer .btn-primary i {
+  color: #ffffff !important;
+}
+
+@media (min-width: 992px) {
+  .footer::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
+
+
